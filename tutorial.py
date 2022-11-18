@@ -1,3 +1,5 @@
+############################## Variables & Data Types #############################
+
 character_name = "Tom"
 character_age = 50
 print("There once\nwas a man named " + character_name + ", ")
@@ -7,7 +9,7 @@ character_name = "Mike"
 print("He really liked the name " + character_name + ",")
 print("but didn't like being " + str(character_age) + ".")
 
-##############################################################
+############################### Working With Strings ###############################
 
 phrase = "Giraffe Academy"
 print(phrase.upper().isupper())
@@ -16,7 +18,7 @@ print(phrase[0])
 print(phrase.index("a"))
 print(phrase.replace("Giraffe", "Elephant"))
 
-##############################################################
+############################### Working With Numbers ###############################
 
 print(3 * (4 + 5))
 print(10 % 3)
@@ -34,7 +36,7 @@ print(floor(5.8))
 print(ceil(5.8))
 print(sqrt(36))
 
-########################################################
+############################### Getting Input From Users ###########################
 
 # name = input("Enter your name: ")
 # age = input("Enter your age: ")
