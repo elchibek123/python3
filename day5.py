@@ -33,3 +33,23 @@ for score in student_scores:
     if score > highest_score:
         highest_score = score
 print(f"The highest score in the class is: {highest_score}.")
+
+# Summary of range between 1-100
+
+total = 0
+for number in range(1, 101):
+    total += number
+print(total)
+
+# Summary of even numbers of range between 1-100
+
+total = 0
+for number in range(2, 101, 2):
+    total += number
+print(total)
+
+total2 = 0
+for number in range(1, 101):
+    if number % 2 == 0:
+        total2 += number
+print(total)
