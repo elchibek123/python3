@@ -104,9 +104,39 @@ travel_log = [
 def add_new_country(country_visited, times_visited, cities_visited):
     new_country = {}
     new_country["country"] = country_visited
-    new_country["visites"] = times_visited
+    new_country["visits"] = times_visited
     new_country["cities"] = cities_visited
     travel_log.append(new_country)
 
 add_new_country("Russia", 2, ["Moscow", "Saint Petersburg"])
 print(travel_log)
+
+# Blind Auction
+
+# from replit import clear
+from blind_auction_art import logo
+print(logo)
+
+bids = {}
+bidding_finished = False
+
+def find_highest_bidder(bidding_record):
+  highest_bid = 0
+  winner = ""
+  for bidder in bidding_record:
+    bid_amount = bidding_record[bidder]
+    if bid_amount > highest_bid: 
+      highest_bid = bid_amount
+      winner = bidder
+  print(f"The winner is {winner} with a bid of ${highest_bid}")
+
+while not bidding_finished:
+  name = input("What is your name?: ")
+  price = int(input("What is your bid?: $"))
+  bids[name] = price
+  should_continue = input("Are there any other bidders? Type 'yes or 'no'.\n")
+  if should_continue == "no":
+    bidding_finished = True
+    find_highest_bidder(bids)
+#   elif should_continue == "yes":
+    # clear()
