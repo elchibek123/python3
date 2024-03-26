@@ -40,7 +40,7 @@ print(days)
 
 # Calculator
 
-from calculator_art import logo
+from imports.calculator_art import logo
 
 def add(n1, n2):
   return n1 + n2

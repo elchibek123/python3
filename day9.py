@@ -114,7 +114,7 @@ print(travel_log)
 # Blind Auction
 
 # from replit import clear
-from blind_auction_art import logo
+from imports.blind_auction_art import logo
 print(logo)
 
 bids = {}

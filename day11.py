@@ -1,5 +1,5 @@
 import random
-from blackjack_art import logo
+from imports.blackjack_art import logo
 
 def deal_card():
   """Returns a random card from the deck."""
