@@ -1,3 +1,5 @@
+# Building a coffee machine
+
 MENU = {
     "espresso": {
         "ingredients": {
